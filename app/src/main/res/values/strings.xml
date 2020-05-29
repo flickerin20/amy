@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">amy</string>
+    <string name="app_name">AMY</string>
+
+    <!-- Login Page Related Strings-->
+    <string name="registationtext">Registration</string>
+
+    <!-- Registration Page Related Strings-->
+    <string name="welcometext">Here is your first step with us for finding the best match for you</string>
+
+
 </resources>

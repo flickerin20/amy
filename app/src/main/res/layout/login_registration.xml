@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/registrationwholepage"
+    android:background="@color/backgroundlightcolor">
+
+    <com.flickerin.amy.customcanvas.CenterCurvedCircle
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/titlelayout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_titlename"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="AMY"
+                android:textSize="28dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabCustomSize="60dp"
+                android:src="@drawable/whitearrow"
+                android:backgroundTint="@color/fabbackcolor"
+                app:elevation="1dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabCustomSize="60dp"
+                android:src="@drawable/home"
+                android:backgroundTint="@color/fabbackcolor"
+                app:elevation="1dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@+id/titlelayout"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <TextView
+                android:id="@+id/tv_welcometext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="@color/normaltextcolor"
+                android:text="@string/welcometext"/>
+
+        </RelativeLayout>
+    </com.flickerin.amy.customcanvas.CenterCurvedCircle>
+
+</androidx.percentlayout.widget.PercentRelativeLayout>
